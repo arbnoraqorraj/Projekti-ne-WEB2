@@ -1,24 +1,18 @@
 <?php
 
-//Lidhja me databaze
+
 include 'config.php';
 
-//Fillimi i session
 session_start();
 
-//Kontrollon nese ekziston nje session per admin dmth nese nje vlere eshte ruajtur ne nje session te quajtur admin
-//id.Ne qofte se kjo vlere nuk egziston apo akoma nuk eshte vendosur atehere perdoruesi (admin)nuk eshte i kyqur
-//dhe drejtohet te faqja e hyrjes(login)
+
 $admin_id = $_SESSION['admin_id'];
 
 if(!isset($admin_id)){
    header('location:login.php');
 }
 
-//Ky kod kontrollon nëse ka një parametër "delete" në URL-në e kërkesës "GET". 
-//Vendoset vlera e parametrit "delete" në variablën $delete_id.
-//Ekzekutohet një kërkesë SQL "DELETE" për të fshirë një rekord nga tabela "users" në bazën e të dhënave,
-//ku ID-ja është e barabartë me $delete_id.
+
 
 if(isset($_GET['delete'])){
    $delete_id = $_GET['delete'];
