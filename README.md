@@ -10,7 +10,7 @@ Bashkengjitur gjeni demostrimin e ekzekutimit me fotografi.
 
 
 ## Autoret
-Arbnore Qorraj, Marigona Hamiti ,Mariam Mourad, Vjosa Salihu 
+Arbnore Qorraj, Marigona Hamiti ,Vjosa Salihu 
 
 
 
